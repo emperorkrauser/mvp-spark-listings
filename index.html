@@ -1,0 +1,835 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Spark Listings</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   <a class="navbar-brand" href="<?php echo base_url();?>"><i class="fa fa-shield"></i> AGENTSQUARED</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav nav-list">
+                        <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+           </div>
+        </nav>
+    <div class="dash-homearea">
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="dash-title"><h2><i class="fa fa-shield"></i> Activated Listings</h2></div>  
+                    <div class="dash-sidebar">
+                        <div class="panel-group" id="#sidebar-accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#sidebar-accordion" href="#activeOne">
+                                            <i class="fa fa-home"></i> 1234 Apple One Street
+                                        </a>
+                                        <div class="pull-right">
+                                            <input class="toggle-enable" checked data-toggle="toggle" data-size="mini" data-on="Enable" data-off="Disable" data-onstyle="success" data-offstyle="danger" type="checkbox">    
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div id="activeOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="activeOne">
+                                    <div class="panel-body">
+                                        <div class="listing-info">
+                                            <h4>Listing ID: 244071</h4>
+                                            <p>Database Information</p>
+                                            <ul class="sidebar-list">
+                                                <li>
+                                                    <label for="">Database:</label>
+                                                    <p>wpdb20151112040847</p>
+                                                </li>
+                                                <li>
+                                                    <label for="">User:</label>
+                                                    <p>u20151112040847</p>
+                                                </li>
+                                                <li>
+                                                    <label for="">Pass:</label>
+                                                    <p>WwYS54cM</p>
+                                                </li>
+                                                <li>
+                                                    <label for="">Prefix:</label>
+                                                    <p>apiw_</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-8">
+                <div class="dash-content">
+                    <div class="dash-title"><h2><i class="fa fa-shield"></i> Spark Listings</h2></div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <i class="fa fa-home"></i> 1234 Apple One Street
+                                    </a>
+                                    <div class="pull-right">
+                                        <input class="toggle-enable" checked data-toggle="toggle" data-size="mini" data-on="Enable" data-off="Disable" data-onstyle="success" data-offstyle="danger" type="checkbox">    
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="listing-info">
+                                        <div class="col-md-5 no-padding-left">
+                                            <div class="property-thumbnail">
+                                                <a href=""><img src="img/20151124002248206904000000-o.jpg" alt="" class="img-responsive"></a>
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h4 class="listing-title"><i class="fa fa-list-alt"></i> MLS Info</h4>
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <div class="col-md-3">
+                                                        <label>MLS ID:</label>    
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>20041116171338191496000000</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3">
+                                                        <label>Status:</label>    
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>Active</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3">
+                                                        <label>Changes:</label>    
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>New Listing</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3">
+                                                        <label>Date Changed:</label>    
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>2015-11-24T00:22:11Z</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3">
+                                                        <label>Listing Date:</label>    
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>2015-11-23</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3">
+                                                        <label>Agent ID:</label>    
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>20050125152513786958000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="clearfix"></p>
+                                        <h4 class="listing-title"><i class="fa fa-list-alt"></i> Property Info</h4>
+                                        <ul class="clearfix">
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Address:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>4042 E Street</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Listing ID:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>244136</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Title:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>4042 E Street</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Remarks:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>This is an affordable first time home or rental property set well back from the street with a private, tree lined front yard. Featuring a covered front porch, small bonus room, family room and a large storage building, it's well located close to Henderson Center. This property will require a little TLC and some updating, but at this price, it's well worth your efforts! Square footage and age per county assessor.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Agreement:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Exclusive Right to Sell</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Showing Instructions</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Leave Message & Go, Email Agent, Call Listing Agent</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Type</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Residential</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Address</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>4042 E Street, Eureka, CA 95503</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>City</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Eureka</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>State</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>CA</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Street Name</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>E</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Street Number</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>4042</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Postal Code</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>95503</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Price</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>$145000</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Original Price</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>$145000</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Previous Price</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Floors / Stories</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Interior Size</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>945 SqFt </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Bedrooms</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>1</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Bathrooms</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>1</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Garage</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Lot Size</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Room</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Sewer</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Construction</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Cooling</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Living Room</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Kitchen</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Not Specified</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Year Built</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>1938</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Directions</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Harris to E St.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Latitude</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>40.768831</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Longitude</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>-124.164765</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Lock Box Location</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Gas meter on left front of house.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Changes</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>New Listing</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Occupant Type</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Vacant</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary edit-info-button"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
+                                    <button type="button" class="btn btn-success view-picture-button" data-toggle="modal" data-target="#"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <i class="fa fa-home"></i> 1234 Apple Two Street
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <div class="listing-info">
+                                        <h4 class="listing-title"><i class="fa fa-list-alt"></i> Listing Info</h4>
+                                        <ul>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Listing ID:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>12345</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Price:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>$100,000</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Address:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>123 Apple One Street</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Status:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Expired</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Property Type:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Changes:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Status Change</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Property Sub Type:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Commercial</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Agreement:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Right to Sell</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="agent-info">
+                                        <h4 class="listing-title"><i class="fa fa-user-secret"></i> Agent Info</h4>
+                                        <ul>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>First Name:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>John</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Middle Name:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Cruz</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Last Name:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Lopez</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Phone:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>12-1234-1</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Phone Ext:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>000</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Office Phone:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>12-1234-5</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Email:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>johnlopez@gmail.com</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Website:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>www.agentsite.com</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>State License:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>asd-123-adsf-000</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="alert bg-danger remarks"><b>Remarks</b>: PROPERTY TO BE SOLD IN AS IS CONDITION.</div>
+                                    <button type="button" class="btn btn-primary edit-info-button"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
+                                    <button type="button" class="btn btn-success view-picture-button" data-toggle="modal" data-target="#"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        <i class="fa fa-home"></i> 1234 Apple Three Street
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <div class="listing-info">
+                                        <h4 class="listing-title"><i class="fa fa-list-alt"></i> Listing Info</h4>
+                                        <ul>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Listing ID:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>12345</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Price:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>$100,000</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Address:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>123 Apple One Street</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Status:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Expired</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Property Type:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Changes:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Status Change</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Property Sub Type:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Commercial</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Agreement:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Right to Sell</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="agent-info">
+                                        <h4 class="listing-title"><i class="fa fa-user-secret"></i> Agent Info</h4>
+                                        <ul>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>First Name:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>John</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Middle Name:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Cruz</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Last Name:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Lopez</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Phone:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>12-1234-1</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Phone Ext:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>000</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Office Phone:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>12-1234-5</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Email:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>johnlopez@gmail.com</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>Website:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>www.agentsite.com</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-md-3">
+                                                    <label>State License:</label>    
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>asd-123-adsf-000</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="alert bg-danger remarks"><b>Remarks</b>: PROPERTY TO BE SOLD IN AS IS CONDITION.</div>
+                                    <button type="button" class="btn btn-primary edit-info-button"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
+                                    <button type="button" class="btn btn-success view-picture-button" data-toggle="modal" data-target="#"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .panel-group -->
+                </div><!-- .dash-content -->
+                <div class="container">
+                    <div class="dash-pagination">
+                        <ul class="pagination list-pagination">
+                            <li class=""><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div><!-- .dash-pagination -->
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .dash-homearea -->
+
+
+
+   
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap-toggle.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
