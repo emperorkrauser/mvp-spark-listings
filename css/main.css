@@ -192,6 +192,7 @@ nav.navbar-inverse{
 }
 .list-pagination li a{
     color: #01a5a7;
+    margin-right:2px;
 } 
 .list-pagination li.active a{
     background: #01a5a7;
