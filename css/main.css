@@ -9,6 +9,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,300);
 
 .btn{
 	border-radius:0;
@@ -131,6 +132,7 @@ nav.navbar-inverse{
     font-family: "Source Sans Pro",sans-serif;
     font-weight: 400;
     clear: both;
+    color: #666;
 }
 .listing-info ul li div{
     padding:0;
@@ -169,6 +171,7 @@ nav.navbar-inverse{
 .view-picture-button{
     background: #0190C8;
     border:0px;
+    box-shadow: none;
 }
 .edit-info-button:hover,
 .view-picture-button:hover{
@@ -217,6 +220,9 @@ nav.navbar-inverse{
 	width: 100%;
 	height: 100%;
 }
+.edit-buttons{
+    margin:15px 0;
+}
 
 /*dash sidebar*/
 .dash-sidebar{
@@ -229,6 +235,9 @@ nav.navbar-inverse{
 }
 
 /*modal*/
+.modal{
+    padding: 0 !important;
+}
 .modal-dialog{
     width: 100%;
     height: 100%;
@@ -240,6 +249,12 @@ nav.navbar-inverse{
 }
 .modal-header{
     border:0px;
+    position: relative;
+    z-index: 2;
+}
+.modal-title{
+    font-size:35px; 
+    color: #018ed5;
 }
 .modal-body{
     padding:15px 20%;
@@ -248,17 +263,63 @@ nav.navbar-inverse{
     padding:15px 20%;
     border:0px;
 }
-.editable-form input{
+.close{
+    color: #018ed5;
+    opacity: 1;
+    font-family: "Lato",sans-serif;
+    font-weight: 300;
+    font-size:40px;
+}
+.editable-form input,
+.editable-form textarea,
+.editable-form select{
     border:0px;
     border-bottom: 1px solid #e3e3e3;
     box-shadow: none;
     border-radius:0px;
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 400;
+    color: #666;
 }
-.editable-form input:focus {
-    border-bottom: 1px solid #e3e3e3;
+.editable-form textarea{
+    resize:none;
+}
+.editable-form label{
+    font-weight: 400;
+}
+.editable-form input:focus,
+.editable-form textarea:focus,
+.editable-form select:focus {
+    border-bottom: 1px dashed #2A95DD;
     box-shadow: none;
     outline: 0 none;
 }
+.select-container{
+    background: url("../img/caret-down.png") no-repeat scroll 95% center #ffffff;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    width: 100%;
+    z-index: 10;
+}
+.select-container select{
+    -moz-appearance: none !important;
+    -webkit-appearance:none !important;
+    appearance:none !important;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    text-indent: 1px;
+    text-overflow: "";
+}
+.property-pics:first-child{
+    margin-left:0px;
+}
+.property-pics{
+    margin:5px 10px;
+    width: 30%;
+    display: inline-block;
+}
+
 
 /*misc*/
 .no-padding{

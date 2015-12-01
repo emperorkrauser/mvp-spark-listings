@@ -15,7 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle.css">
@@ -52,7 +51,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="dash-title">
-                        <h2><i class="fa fa-shield"></i> Activated Listings</h2>
+                        <h2><i class="fa fa-check-circle"></i> Activated Listings</h2>
                     </div>  
                     <div class="dash-sidebar">
                         <div class="panel-group" id="#sidebar-accordion" role="tablist" aria-multiselectable="true">
@@ -113,7 +112,7 @@
                 <div class="col-md-8">
                     <div class="dash-content">
                         <div class="dash-title">
-                            <h2><i class="fa fa-shield"></i> Spark Listings</h2>
+                            <h2><i class="fa fa-list-alt"></i> Spark Listings</h2>
                         </div>
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
@@ -136,7 +135,7 @@
                                                 </div> 
                                             </div>
                                             <div class="col-md-7">
-                                                <h4 class="listing-title"><i class="fa fa-list-alt"></i> MLS Info</h4>
+                                                <h4 class="listing-title">MLS Info</h4>
                                                 <ul class="clearfix">
                                                     <li>
                                                         <div class="col-md-3">
@@ -474,8 +473,11 @@
                                             </ul>
                                         </div>
 
-                                        <button type="button" class="btn btn-primary edit-info-button" data-toggle="modal" data-target="#modalOne"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
-                                        <button type="button" class="btn btn-success view-picture-button" data-toggle="modal" data-target="#"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                        <div class="edit-buttons">
+                                            <button type="button" class="btn btn-primary edit-info-button" data-toggle="modal" data-target="#modalOne"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
+                                            <button type="button" class="btn btn-primary view-picture-button" data-toggle="modal" data-target="#modalTwo"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -486,6 +488,9 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                             <i class="fa fa-home"></i> 1234 Apple Two Street
                                         </a>
+                                        <div class="pull-right">
+                                            <input class="toggle-enable" checked data-toggle="toggle" data-size="mini" data-on="Enable" data-off="Disable" data-onstyle="success" data-offstyle="danger" type="checkbox">    
+                                        </div>
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -497,7 +502,7 @@
                                                 </div> 
                                             </div>
                                             <div class="col-md-7">
-                                                <h4 class="listing-title"><i class="fa fa-list-alt"></i> MLS Info</h4>
+                                                <h4 class="listing-title">MLS Info</h4>
                                                 <ul class="clearfix">
                                                     <li>
                                                         <div class="col-md-3">
@@ -835,8 +840,11 @@
                                             </ul>
                                         </div>
 
-                                        <button type="button" class="btn btn-primary edit-info-button"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
-                                        <button type="button" class="btn btn-success view-picture-button" data-toggle="modal" data-target="#"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                        <div class="edit-buttons">
+                                            <button type="button" class="btn btn-primary edit-info-button" data-toggle="modal" data-target="#modalOne"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
+                                            <button type="button" class="btn btn-primary view-picture-button" data-toggle="modal" data-target="#modalTwo"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -847,9 +855,12 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                                             <i class="fa fa-home"></i> 1234 Apple Three Street
                                         </a>
+                                        <div class="pull-right">
+                                            <input class="toggle-enable" checked data-toggle="toggle" data-size="mini" data-on="Enable" data-off="Disable" data-onstyle="success" data-offstyle="danger" type="checkbox">    
+                                        </div>
                                     </h4>
                                 </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
                                         <div class="listing-info">
                                             <div class="col-md-5 no-padding-left">
@@ -858,7 +869,7 @@
                                                 </div> 
                                             </div>
                                             <div class="col-md-7">
-                                                <h4 class="listing-title"><i class="fa fa-list-alt"></i> MLS Info</h4>
+                                                <h4 class="listing-title">MLS Info</h4>
                                                 <ul class="clearfix">
                                                     <li>
                                                         <div class="col-md-3">
@@ -1196,11 +1207,16 @@
                                             </ul>
                                         </div>
 
-                                        <button type="button" class="btn btn-primary edit-info-button"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
-                                        <button type="button" class="btn btn-success view-picture-button" data-toggle="modal" data-target="#"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                        <div class="edit-buttons">
+                                            <button type="button" class="btn btn-primary edit-info-button" data-toggle="modal" data-target="#modalOne"><i class="fa fa-pencil-square-o"></i> Edit Info</button>
+                                            <button type="button" class="btn btn-primary view-picture-button" data-toggle="modal" data-target="#modalTwo"><i class="fa fa-file-image-o"></i> View Pictures</button>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
+
+                            
                         </div><!-- .panel-group -->
                     </div><!-- .dash-content -->
                     <div class="container">
@@ -1226,212 +1242,230 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-                    <!-- <h4 class="modal-title">Modal title</h4> -->
                 </div>
                 <div class="modal-body">
+                    <h4 class="modal-title">Edit Info</h4>
                     <form action="" class="form-horizontal editable-form">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Address</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="4042 E Street">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Listing ID</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="244136">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Title</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="4042 E Street">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Remarks</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <textarea class="form-control" name="" id="" cols="30" rows="10">This is an affordable first time home or rental property set well back from the street with a private, tree lined front yard. Featuring a covered front porch, small bonus room, family room and a large storage building, it's well located close to Henderson Center. This property will require a little TLC and some updating, but at this price, it's well worth your efforts! Square footage and age per county assessor.</textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Agreement</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Exclusive Right to Sell">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Showing Instructions</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Leave Message & Go, Email Agent, Call Listing Agent">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Type</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <div class="select-container">
+                                    <select name="" id="" class="form-control">
+                                        <option value="" disabled>Please select</option>
+                                        <option value="">Residential</option>
+                                        <option value="">Commercial</option>
+                                    </select>    
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Address</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="4042 E Street, Eureka, CA 95503">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">City</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Eureka">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">State</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <div class="select-container">
+                                    <select name="" id="" class="form-control">
+                                        <option value="" disabled>Please select</option>
+                                        <option value="">CA</option>
+                                        <option value="">AK</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Street Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="" value="E">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Street Number</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="4042">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Postal Code</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="95503">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Price</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="$145000">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Original Price</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="$145000">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Previous Price</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Floor / Stories</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Interior Size</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="945 SqFt ">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Bedrooms</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="1">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Bathrooms</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="1">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Garage</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Lot Size</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Room</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Sewer</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Construction</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Cooling</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Living Room</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Kitchen</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Not Specified">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Year Built</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="1938">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Directions</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Harris to E St.">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Latitude</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="40.768831">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Longitude</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="s-124.164765">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Lock Box Location</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Gas meter on left front of house.">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Change</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="New Listing">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Occupant Type</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" value="Vacant">
                             </div>
                         </div>
                     </form>
@@ -1440,6 +1474,52 @@
                     <p class="text-center">
                         <button type="button" class="btn btn-success">Save changes</button>
                     </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="modalTwo" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                </div>
+                <div class="modal-body clearfix">
+                    <h4 class="modal-title">Property pictures</h4>
+                    <div class="property-pics">
+                        <img src="img/20151124002248206904000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002301920283000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002310263813000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002301920283000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002310263813000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002310263813000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002301920283000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002310263813000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002310263813000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002301920283000000-o.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="property-pics">
+                        <img src="img/20151124002310263813000000-o.jpg" alt="" class="img-responsive">
+                    </div>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
